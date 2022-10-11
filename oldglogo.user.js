@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         oldglogo
-// @namespace    zulc22.space
+// @namespace    https://github.com/zulc22
 // @version      0.2
 // @description  Revert the Google Logo to an earlier incarnation
 // @author       zulc22
@@ -9,6 +9,7 @@
 // @grant        none
 // @run-at       document-start
 // @updateurl    https://github.com/zulc22/oldglogo/raw/master/oldglogo.user.js
+// @homepageURL  https://github.com/zulc22/oldglogo
 // ==/UserScript==
 
 function replaceLogo(e) {
