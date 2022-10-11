@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         oldglogo
 // @namespace    https://github.com/zulc22
-// @version      0.2
+// @version      0.3
 // @description  Revert the Google Logo to an earlier incarnation
 // @author       zulc22
 // @match        https://www.google.com/*
@@ -39,11 +39,10 @@ function main() {
     if (window.location.href == "https://www.google.com/"||
         window.location.href.startsWith("https://www.google.com/webhp")) {
         e = document.getElementById("hplogo")
-        e.innerHTML = `<img src="${logoData}" height=115px>`
-        e.style.height = "115px";
-        e.parentElement.style.height = "115px";
-        e.parentElement.parentElement.style.height = "115px";
-        e.parentElement.parentElement.style.marginTop = "5%";
+        e.innerHTML = `<img src="${logoData}" height=110px>`
+        e.parentElement.style.height = "115px"
+        e.parentElement.parentElement.style.height = "115px"
+        e.parentElement.parentElement.style.marginTop = "5%"
     }
     // On search page
     if (window.location.href.startsWith("https://www.google.com/search")) {
